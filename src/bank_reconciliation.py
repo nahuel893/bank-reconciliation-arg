@@ -26,7 +26,6 @@ from rich.progress import track
 
 console = Console()
 
-
 class BankReconciliation:
     """Clase principal para realizar la conciliación bancaria."""
 

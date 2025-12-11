@@ -48,6 +48,7 @@ def receive_message():
 
     message_id = data.get('id')
     sender = data.get('sender')
+    author = data.get('author')  # Autor real del mensaje (número o contacto)
     body = data.get('body', '')
     cliente_codigo = data.get('cliente_codigo', 'DESCONOCIDO')
 
@@ -87,6 +88,7 @@ def receive_message():
                     message_id=message_id if message_id else "unknown",
                     timestamp=None,  # Podrías parsear el timestamp si lo envías formateado
                     sender=sender,
+                    author=author,
                     body=body
                 )
                 db.add(nuevo_mensaje)
