@@ -172,7 +172,7 @@ class ProcessTab(ttk.Frame):
 class DashboardApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Panel de Control - Comprobantes Badie")
+        self.title("Panel de Control - Bank Reconciliation")
         self.geometry("1100x700")
         self.configure(bg=BG_COLOR)
 

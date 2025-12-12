@@ -1,4 +1,4 @@
-# Comprobantes Badie
+# Bank Reconciliation ARG
 
 <div align="center">
 
@@ -22,7 +22,7 @@
 
 ## Descripción
 
-**Comprobantes Badie** es un sistema ETL (Extract, Transform, Load) que automatiza la extracción de datos de comprobantes de transferencias bancarias enviados por WhatsApp. Utiliza **Google Gemini AI** para procesar imágenes y extraer información estructurada, almacenándola en PostgreSQL para su posterior análisis y conciliación bancaria.
+**Bank Reconciliation ARG** es un sistema ETL (Extract, Transform, Load) que automatiza la extracción de datos de comprobantes de transferencias bancarias enviados por WhatsApp. Utiliza **Google Gemini AI** para procesar imágenes y extraer información estructurada, almacenándola en PostgreSQL para su posterior análisis y conciliación bancaria.
 
 ### Problema que Resuelve
 
@@ -52,9 +52,8 @@ Este sistema **automatiza todo el proceso**, reduciendo el tiempo de procesamien
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                              COMPROBANTES BADIE                             │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
+│                              BANK RECONCILIATION                            │
+├─────────────────────────────────────────────────────────────────────────────┤ │                                                                             │
 │  ┌──────────────┐      ┌──────────────┐      ┌──────────────────────────┐  │
 │  │   WhatsApp   │      │   Node.js    │      │      Python Backend      │  │
 │  │    Group     │─────▶│     Bot      │─────▶│                          │  │
@@ -121,8 +120,8 @@ Este sistema **automatiza todo el proceso**, reduciendo el tiempo de procesamien
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/comprobantes-badie.git
-cd comprobantes-badie
+git clone https://github.com/tu-usuario/bank-reconciliation-arg.git
+cd bank-reconciliation-arg
 ```
 
 ### 2. Configurar Variables de Entorno
@@ -281,7 +280,7 @@ Dashboard web con todos los comprobantes procesados.
 ## Estructura del Proyecto
 
 ```
-comprobantes-badie/
+bank-reconciliation-arg/
 ├── src/
 │   ├── config.py              # Configuración y variables de entorno
 │   ├── data_models.py         # Modelos SQLAlchemy (Mensaje, Comprobante)

@@ -1,4 +1,4 @@
-# Documentación Técnica: Sistema "Comprobantes Badie"
+# Documentación Técnica: Sistema "Bank Reconciliation ARG"
 
 ## 1. Diagrama de Flujo (Arquitectura)
 
